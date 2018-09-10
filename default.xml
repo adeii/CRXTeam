@@ -361,7 +361,7 @@
   <project path="hardware/qcom/bt" name="CyanogenMod/android_hardware_qcom_bt" groups="qcom"  remote="cm" revision="cm-11.0"/>
   <project path="hardware/qcom/camera" name="CyanogenMod/android_hardware_qcom_camera" groups="qcom"  remote="cm" revision="cm-11.0"/>
   <project path="hardware/qcom/display" name="CyanogenMod/android_hardware_qcom_display" groups="qcom"  remote="cm" revision="cm-11.0"/>
-  <project path="hardware/qcom/display-caf" name="CyanogenMod/android_hardware_qcom_display-caf" groups="caf" revision="cm-11.0" remote="cm"/>
+  <!-- project path="hardware/qcom/display-caf" name="CyanogenMod/android_hardware_qcom_display-caf" groups="caf" revision="cm-11.0" remote="cm"/ -->
   <project path="hardware/qcom/keymaster" name="CyanogenMod/android_hardware_qcom_keymaster" groups="qcom"  remote="cm" revision="cm-11.0"/>
   <project path="hardware/qcom/media" name="CyanogenMod/android_hardware_qcom_media" groups="qcom"  remote="cm" revision="cm-11.0"/>
   <project path="hardware/qcom/media-caf" name="CyanogenMod/android_hardware_qcom_media-caf" groups="caf" revision="cm-11.0" remote="cm"/>
@@ -496,23 +496,22 @@
     <copyfile src="build.sh" dest="cpa-build.sh" />    
   </project>
   
-  <project path="vendor/huawei" name="chil360/proprietary_vendor_huawei" remote="github" revision="kitkat"/>
-  <project path="kernel/huawei/huawei-kernel-3.4" name="chil360/chil360-kernel" remote="github" revision="kitkat"/>
-  <project path="device/huawei/msm7x27a-common" name="chil360/android_device_huawei_msm7x27a-common" remote="github" revision="slimkat"/>
-  <project path="device/huawei/u8833" name="chil360/android_device_huawei_u8833" remote="github" revision="slimkat"/>
-  <project path="device/huawei/u8951" name="chil360/android_device_huawei_u8951" remote="github" revision="slimkat"/>
-  <project path="device/huawei/u8825" name="chil360/android_device_huawei_u8825" remote="github" revision="slimkat"/>
+ <project path="vendor/huawei" name="SlimKat-Y300/proprietary_vendor_huawei" remote="github" revision="slimkat"/>
+ <project path="kernel/huawei/huawei-kernel-3.4" name="SlimLP-Y300/chil360-kernel" remote="github" revision="mm6.0"/>
+ <project path="device/huawei/msm7x27a-common" name="SlimKat-Y300/android_device_huawei_msm7x27a-common" remote="github" revision="slimkat"/>
+ <project path="device/huawei/u8833" name="SlimKat-Y300/android_device_huawei_u8833" remote="github" revision="slimkat"/>
+ <project path="device/huawei/u8951" name="SlimKat-Y300/android_device_huawei_u8951" remote="github" revision="slimkat"/>
+ <project path="device/huawei/u8825" name="SlimKat-Y300/android_device_huawei_u8825" remote="github" revision="slimkat"/>
 
-     <!-- WIFI -->
+  <!-- WIFI -->
   <project path="hardware/atheros/wifi/ath6kl-huawei" name="Dazzozo/android_hardware_atheros_wifi_ath6kl-huawei" remote="github" revision="master" />
   <project path="hardware/atheros/wlan" name="legaCyMod/android_hardware_atheros_wlan" remote="github" revision="cm-11.0" />
 
-     <!-- GPS -->
-  <project path="hardware/qcom/gps" name="chil360/android_hardware_qcom_gps" remote="github" revision="kitkat" />
+  <!-- QCOM Hardware -->
+  <!-- project path="hardware/qcom/audio-caf" name="SlimRoms/hardware_qcom_audio-caf" remote="github" revision="kk4.4" / -->  
+  <project path="hardware/qcom/display-caf" name="SlimKat-Y300/hardware_qcom_display-caf" remote="github" revision="kk4.4" />  
+  <!-- project path="hardware/qcom/media-caf" name="SlimRoms/hardware_qcom_media-caf" remote="github" revision="kk4.4" / -->
 
-     <!-- QCOM Hardware -->
-  <project path="hardware/qcom/display-legacy" name="Dazzozo/android_hardware_qcom_display-legacy" remote="github" revision="jellybean-mr2" />
-  <project path="hardware/qcom/media-legacy" name="Dazzozo/android_hardware_qcom_media-legacy" remote="github" revision="kitkat" />
 
      <!-- Webkit -->
   <project path="external/webkit" name="Dazzozo/android_external_webkit" remote="github" revision="kitkat"/>
